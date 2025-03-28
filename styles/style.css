@@ -1,0 +1,37 @@
+header{
+    background-color: aqua;
+}
+
+nav{
+    background-color: goldenrod;
+}
+
+#containerRespuesta{
+    border: 5px;
+}
+.respuesta{
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    margin: 30px;
+    border: 2px solid black;
+    
+}
+
+#div1{
+    background-color: red;
+}
+#div2{
+    background-color: yellow;
+}
+#div3{
+    background-color: green;
+}
+#div4{
+    background-color:blue ;
+}
+
+#grafica{
+    background-color: bisque;
+}
+
