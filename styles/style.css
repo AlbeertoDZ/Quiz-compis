@@ -6,16 +6,39 @@ nav{
     background-color: goldenrod;
 }
 
+h1, h2, h3{
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    justify-content: center;
+}
+
+#preguntas{
+    background-color: burlywood;
+    width: auto;
+    height: auto;
+}
+
+#preguntas p{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+   
+    padding: 15px;
+    
+}
+
 #containerRespuesta{
     border: 5px;
 }
 .respuesta{
     margin: 10px;
     padding: 10px;
+    height: 1em;
     display:flex;
-    margin: 30px;
     border: 2px solid black;
-    
 }
 
 #div1{
@@ -31,7 +54,8 @@ nav{
     background-color:blue ;
 }
 
-#grafica{
-    background-color: bisque;
+#estadisticas{
+   display:flex;
 }
+
 
