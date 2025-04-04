@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Quiz!</title>
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="menu" />
-        <label for="menu"></label>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
-      <h1>Bienvenidos a nuestro Quiz</h1>
-    </header>
-    <main>
-      <section id="containerPreguntas">
-        <div id="preguntas"></div>
-      </section>
-      <section id="containerRespuestas">
-        <div class="respuesta" id="div1"></div>
-        <div class="respuesta" id="div2"></div>
-        <div class="respuesta" id="div3"></div>
-        <div class="respuesta" id="div4"></div>
-      </section>
-      <section id="containerGrafica">
-        <div id="grafica"></div>
-      </section>
-    </main>
+<html lang="es">
 
-    <!--Footer-->
-    <footer></footer>
-    <script src="./scripts/script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="./media/favicon-juego.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icono">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="/pages/question.html">Quiz</a></li>
+        <li><a href="/pages/results.html">Resultados</a></li>
+      </ul>
+  </nav>
+  </header>
+  <main>
+    <section class="container" id="containerBienvenida">
+      <div id="bienvenida">
+        <h2>Bienvenido al Quizge</h2>
+      </div>
+      <section id="container-nombreUsuario">
+        <div id="elemento-nombreUsuario"></div>
+      </section>
+      <section id="container-correoUsuario">
+        <div id="elemento-correoUsuario"></div>
+      </section>
+      <button class="button" id="comienzo-quiz" >Empezar Quiz!</button>
+    </section>
+
+    <section class="container" id="containerEstadisticas">
+      <div id="estadisticas">
+      </div>
+    </section>
+  </main>
+  <!--Footer-->
+  <footer>
+    <div class="containerFooter">
+      <div class="elementosFooter">
+        <p>Alberto D.</p>
+        <p>Mario L.</p>
+        <p>Michelle D.</p>
+        <button id="music-control">
+          <span id="music-icon">▶️</span>
+          <audio id="background-music" src="./media/musicaPagina.mp3"></audio>
+        </button>
+      </div>
+    </div>
+  </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script> -->
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+ <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+<!-- <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script> -->
+<!-- <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script> -->
+
+  <script src="./scripts/home.js"></script>
+  <script src="./scripts/question.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/results.js"></script>
+</body>
+
 </html>
